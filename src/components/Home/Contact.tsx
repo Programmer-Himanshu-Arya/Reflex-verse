@@ -2,7 +2,7 @@ import { Mail } from 'lucide-react'
 
 export default function ContactSection() {
     return (
-        <section className="w-full bg-white py-16" id="contact">
+        <section className="w-full bg-white py-16" id="contact-us">
             <div className="container mx-auto max-w-6xl px-4">
                 {/* Header with Arrows */}
                 <div className="relative mb-12 text-center">

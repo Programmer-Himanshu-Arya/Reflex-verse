@@ -17,7 +17,7 @@ function LandingPage() {
       <HowItWorks />
       <Features />
       <ServicesSection/>
-      {/* <PortfolioSection/> */}
+      <PortfolioSection/>
       <TestimonialsSection/>
       {/* <Pricing /> */}
       <ContactSection/>
