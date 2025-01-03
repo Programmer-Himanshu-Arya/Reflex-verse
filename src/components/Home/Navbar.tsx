@@ -61,7 +61,7 @@ const Navbar = () => {
       {/* Mobile Menu Overlay */}
       <div
         className={classNames(
-          "fixed inset-0 bg-black bg-opacity-50 transition-opacity md:hidden",
+          "fixed md:hidden",
           { "opacity-100": isOpen, "opacity-0 pointer-events-none": !isOpen }
         )}
         onClick={closeMenu}
@@ -83,7 +83,7 @@ const Navbar = () => {
             <X size={32} />
           </button>
         </div>
-        <ul className="flex flex-col gap-10 text-center text-6xl mt-20">
+        <ul className="flex flex-col gap-10 text-center text-5xl mt-28">
           {["How it works", "Services", "Portfolio", "Testimonials", "Contact Us"].map((item) => (
             <li key={item}>
               <a

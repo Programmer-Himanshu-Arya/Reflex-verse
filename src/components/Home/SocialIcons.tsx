@@ -1,8 +1,8 @@
 import { Youtube, Instagram, Facebook, Linkedin } from 'lucide-react';
 
-const socialIcons = [
+export const socialIcons = [
   { icon: <Youtube />, href: '#' },
-  { icon: <Instagram />, href: '#' },
+  { icon: <Instagram />, href: 'https://www.instagram.com/reflexverse/' },
   { icon: <Linkedin />, href: '#' },
   { icon: <Facebook />, href: '#' },
 ];
@@ -14,6 +14,7 @@ export default function SocialIcons() {
         <a
           key={index}
           href={social.href}
+          target="_blank"
           className="w-10 h-10 rounded-full border border-mint/30 flex items-center justify-center text-mint-dark hover:bg-mint-dark hover:text-forest-light transition-all duration-300"
         >
           {social.icon}

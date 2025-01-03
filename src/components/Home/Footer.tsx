@@ -1,4 +1,5 @@
-import { Mail, Instagram, Youtube, Twitter, LinkedinIcon, Facebook } from 'lucide-react';
+import { Mail } from 'lucide-react';
+import { socialIcons } from './SocialIcons';
 
 export default function Footer() {
   return (
@@ -17,10 +18,12 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-semibold text-white mb-4">Contact</h3>
             <div className="space-y-3">
-              <div className="flex items-center">
-                <Mail className="w-5 h-5 mr-2" />
-                <span>reflexverse@gmail.com</span>
-              </div>
+              <a href="mailto:reflexverse@gmail.com">
+                <div className="flex items-center">
+                  <Mail className="w-5 h-5 mr-2" />
+                  <span>reflexverse@gmail.com</span>
+                </div>
+              </a>
             </div>
           </div>
 
@@ -29,7 +32,6 @@ export default function Footer() {
             <ul className="space-y-2">
               <li><a href="#services" className="hover:scale-110">Services</a></li>
               <li><a href="#portfolio" className="hover:scale-110">Portfolio</a></li>
-              <li><a href="#about" className="hover:scale-110">About</a></li>
               <li><a href="#testimonials" className="hover:scale-110">Testimonials</a></li>
             </ul>
           </div>
@@ -37,26 +39,18 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-semibold text-white mb-4">Follow Us</h3>
             <div className="flex space-x-4">
-              <a href="#" className="hover:scale-110">
-                <Instagram className="w-6 h-6" />
-              </a>
-              <a href="#" className="hover:scale-110">
-                <Youtube className="w-6 h-6" />
-              </a>
-              <a href="#" className="hover:scale-110">
-                <Twitter className="w-6 h-6" />
-              </a>
-              <a href="#" className="hover:scale-110">
-                <LinkedinIcon className="w-6 h-6" />
-              </a>
-              <a href="#" className="hover:scale-110">
-                <Facebook className="w-6 h-6" />
-              </a>
+              {
+                socialIcons.map((social, index) => (
+                  <a key={index} href={social.href} target="_blank" className="hover:scale-110">
+                    {social.icon}
+                  </a>
+                ))
+              }
             </div>
           </div>
         </div>
 
-        <div className="border-t border-gray-800 mt-12 pt-8 text-center">
+        <div className="border-t border-mint/20 mt-12 pt-8 text-center">
           <p>&copy; {new Date().getFullYear()} Reflexverse. All rights reserved.</p>
         </div>
       </div>

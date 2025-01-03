@@ -43,7 +43,7 @@ export default function ContactSection() {
                     {/* Newsletter Section */}
                     <div className="rounded-2xl bg-forest-light p-8 flex flex-col items-center justify-center">
                         <Mail className="mb-4 h-8 w-8 text-[#98FFB3]" />
-                        <div className="text-lg font-semibold text-[#98FFB3]">mail@influenca.id</div>
+                        <div className="text-lg font-semibold text-[#98FFB3]">reflexverse@gmail.com</div>
                         <p className="mt-2 text-[#98FFB3]/80">
                             We usually respond within 24 hours
                         </p>

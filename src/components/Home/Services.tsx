@@ -31,8 +31,7 @@ export default function ServicesSection() {
           Services
         </h2>
         <p className="text-lg text-forest/80 mb-12">
-          Our streamlined process is designed to save you time and hassle, allowing you to focus on what
-          matters most while we take care of the video production details
+          Our efficient process is tailored to save you time and effort, enabling you to focus on what truly matters while we handle all the video production details.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {services.map((service, index) => (

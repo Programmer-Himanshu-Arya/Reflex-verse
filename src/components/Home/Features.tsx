@@ -1,17 +1,16 @@
-import React from 'react';
-import { Zap, Clock, Sparkles, RefreshCw, Shield, Headphones } from 'lucide-react';
+import { Zap, Sparkles, RefreshCw, TargetIcon, HandshakeIcon, LightbulbIcon } from 'lucide-react';
 
 const features = [
   {
     icon: <Zap className="w-6 h-6" />,
     title: 'Fast Turnaround',
-    description: 'Get your edited videos back in as little as 24 hours'
+    description: 'Get your edited videos back in as little as 36 hours'
   },
-  {
-    icon: <Clock className="w-6 h-6" />,
-    title: '24/7 Service',
-    description: 'Round-the-clock support and editing services'
-  },
+  // {
+  //   icon: <Clock className="w-6 h-6" />,
+  //   title: '24/7 Service',
+  //   description: 'Round-the-clock support and editing services'
+  // },
   {
     icon: <Sparkles className="w-6 h-6" />,
     title: 'Professional Quality',
@@ -19,18 +18,23 @@ const features = [
   },
   {
     icon: <RefreshCw className="w-6 h-6" />,
-    title: 'Unlimited Revisions',
-    description: 'Well revise until youre 100% satisfied'
+    title: 'Revisions',
+    description: "Well revise upto 5 times if you're not 100% satisfied"
   },
   {
-    icon: <Shield className="w-6 h-6" />,
-    title: 'Secure Platform',
-    description: 'Your content is safe with our encrypted storage'
+    icon: <LightbulbIcon className="w-6 h-6" />,
+    title: 'Constant Innovation',
+    description: 'We keep up with the latest trends, effects, and technologies to provide a modern and fresh edge to your videos.'
   },
   {
-    icon: <Headphones className="w-6 h-6" />,
-    title: 'Dedicated Support',
-    description: 'Personal account manager for enterprise clients'
+    icon: <HandshakeIcon className="w-6 h-6" />,
+    title: 'Seamless Workflow',
+    description: 'Our project management streamlines the editing process from start to finish, saving time and reducing stress for you.'
+  },
+  {
+    icon: <TargetIcon className="w-6 h-6" />,
+    title: 'Your Vision, Our Mission',
+    description: 'We take your ideas and goals and turn them into powerful videos that make a lasting impact.'
   }
 ];
 
